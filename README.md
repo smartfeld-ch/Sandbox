@@ -1,31 +1,20 @@
 
-> Diese Seite bei [https://smartfeld-ch.github.io/sandbox/](https://smartfeld-ch.github.io/sandbox/) öffnen
+# der Titel
 
-## Als Erweiterung verwenden
+etwas Text
 
-Dieses Repository kann als **Erweiterung** in MakeCode hinzugefügt werden.
+## Schritt 1 - Show the temperature
 
-* öffne [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* klicke auf **Neues Projekt**
-* klicke auf **Erweiterungen** unter dem Zahnrad-Menü
-* nach **https://github.com/smartfeld-ch/sandbox** suchen und importieren
+Get a ``||input:temperature||`` block and place it in the value slot of ``||basic:show number||``.
 
-## Dieses Projekt bearbeiten ![Build Status Abzeichen](https://github.com/smartfeld-ch/sandbox/workflows/MakeCode/badge.svg)
+```blocks
+basic.showString("Hi Clemens!")
+basic.forever(function () {
+    led.toggle(randint(0, 4), randint(0, 4))
+})
+```
 
-Um dieses Repository in MakeCode zu bearbeiten.
+## Schritt 2
 
-* öffne [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* klicke auf **Importieren** und dann auf **Importiere URL**
-* füge **https://github.com/smartfeld-ch/sandbox** ein und klicke auf Importieren
+## Schritt 3
 
-## Blockvorschau
-
-Dieses Bild zeigt den Blockcode vom letzten Commit im Master an.
-Die Aktualisierung dieses Bildes kann einige Minuten dauern.
-
-![Eine gerenderte Ansicht der Blöcke](https://github.com/smartfeld-ch/sandbox/raw/master/.github/makecode/blocks.png)
-
-#### Metadaten (verwendet für Suche, Rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
